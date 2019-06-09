@@ -1,0 +1,26 @@
+{
+  "name": "Example Sample",
+  "git_url": "https://github.com/Guardiome/sample_template",
+  "version": "0.0.1",
+  "keyword": [],
+  "environment": [
+    "pip install kraft",
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes htslib",
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes samtools"
+  ],
+  "download": {
+    "input": ["data_for_sequencing_process.zip"]
+  },
+  "command": {
+    "check_sequence": "code/check_sequence.sh 8 output input/sample/*fastq*",
+    "process_sample": "python code/process_sample.py"
+  },
+  "n_job": 8,
+  "gb_memory": 12,
+  "germ_dna.1": "../input/sample/germ_dna.1.fastq.gz",
+  "germ_dna.2": "../input/sample/germ_dna.2.fastq.gz",
+  "soma_dna.1": "../input/sample/soma_dna.1.fastq.gz",
+  "soma_dna.2": "../input/sample/soma_dna.2.fastq.gz",
+  "soma_rna.1": "../input/sample/soma_rna.1.fastq.gz",
+  "soma_rna.2": "../input/sample/soma_rna.2.fastq.gz"
+}
