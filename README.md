@@ -1,6 +1,6 @@
-# Title
+# Sample Template
 
-Description.
+Sample :bust_in_silhouette: template :kimono:
 
 ## Reference
 
