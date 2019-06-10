@@ -126,8 +126,6 @@ function ready {
 
   type snpEff
 
-  # TODO: check for snpeff database
-
   type kallisto
 
   CDNA_FA_GZ=$DATA_DIR/grch/Homo_sapiens.GRCh38.cdna.all.fa.gz
@@ -324,8 +322,11 @@ function count_transcript {
   print_header "Counting transcript ..."
 
   local REFERENCE=$1
+
   local _1_FQ_GZ=$2
+
   local _2_FQ_GZ=$3
+
   local OUTPUT_DIR=$4
 
   if [[ $REFERENCE = "transcriptome" ]]; then
