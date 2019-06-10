@@ -3,23 +3,6 @@
 set -e
 
 
-function check_n_argument {
-
-  local N_ARGUMENT=$1
-
-  local N_REQUIRED_ARGUMENT=$2
-
-  if [[ $N_ARGUMENT != "$N_REQUIRED_ARGUMENT" ]]; then
-
-    echo "The number of argument ($N_ARGUMENT) is not $N_REQUIRED_ARGUMENT." >&2
-
-    exit 1
-
-  fi
-
-}
-
-
 function print_header {
 
   local TEXT=$1
