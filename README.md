@@ -25,6 +25,6 @@ Sample :bust_in_silhouette: template :kimono:
 
 <br>
 
-Omics App powered by [Guardiome](https://guardiome.com)
+Shareable Project powered by [Guardiome](https://guardiome.com)
 
 <img src="stuff/guardiome_logo.png" width="150" height="150">

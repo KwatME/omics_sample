@@ -1,23 +1,23 @@
 {
-  "name": "Example Sample",
-  "git_url": "https://github.com/Guardiome/sample_template",
+  "name": "",
+  "git_url": "",
   "version": "0.0.1",
   "keyword": [],
   "environment": [],
   "download": {
-    "input": ["data_for_processing_sequence.zip"]
+    "input": ["https://s3-us-west-1.amazonaws.com/guardiome.omics-data/data_for_processing_sequence.zip"]
   },
   "command": {
-    "check_sequence": "fastqc input/sample/*fastq.gz",
-    "process_sample": "julia code/process_sample.jl"
+    "check_sequence": "",
+    "process_sample": ""
   },
   "germ_dna.1.fastq.gz": "input/sample/germ_dna.1.fastq.gz",
   "germ_dna.2.fastq.gz": "input/sample/germ_dna.2.fastq.gz",
   "soma_dna.1.fastq.gz": "input/sample/soma_dna.1.fastq.gz",
   "soma_dna.2.fastq.gz": "input/sample/soma_dna.2.fastq.gz",
-  "dna_is_targeted": true,
+  "dna_is_targeted": false,
   "soma_rna.1.fastq.gz": "input/sample/soma_rna.1.fastq.gz",
   "soma_rna.2.fastq.gz": "input/sample/soma_rna.2.fastq.gz",
   "n_job": 1,
-  "gb_memory": 32
+  "gb_memory": 8
 }
