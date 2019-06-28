@@ -2,6 +2,10 @@
 
 Sample :bust_in_silhouette: template :kimono:
 
+```sh
+PATH="`pwd`/environment/manta-1.5.0.centos6_x86_64/bin:`pwd`/environment/strelka-2.9.10.centos6_x86_64/bin:$PATH"
+```
+
 ## Reference
 
 -   <https://www.nature.com/articles/s41587-019-0054-x>

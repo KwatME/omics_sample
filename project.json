@@ -3,9 +3,19 @@
   "git_url": "",
   "version": "0.0.1",
   "keyword": [],
-  "environment": [],
+  "environment": [
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel conda-forge --yes jupyterlab julia",
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes skewer fastqc minimap2 htslib samtools bcftools snpeff kallisto"
+  ],
   "download": {
-    "input": ["https://s3-us-west-1.amazonaws.com/guardiome.omics-data/data_for_processing_sequence.zip"]
+    "environment": [
+      "https://github.com/Illumina/manta/releases/download/v1.5.0/manta-1.5.0.centos6_x86_64.tar.bz2",
+      "https://github.com/Illumina/strelka/releases/download/v2.9.10/strelka-2.9.10.centos6_x86_64.tar.bz2"
+    ],
+    "input": [
+      "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/data_for_processing_sequence.zip"
+    ]
+
   },
   "command": {
     "check_sequence": "",
