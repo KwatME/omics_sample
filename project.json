@@ -15,7 +15,6 @@
     "input": [
       "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/data_for_processing_sequence.zip"
     ]
-
   },
   "command": {
     "check_sequence": "",
