@@ -17,8 +17,7 @@
     ]
   },
   "command": {
-    "check_sequence": "",
-    "process_sample": ""
+    "jupyter": "PATH=\"`pwd`/environment/manta-1.5.0.centos6_x86_64/bin:`pwd`/environment/strelka-2.9.10.centos6_x86_64/bin:$PATH\" && jupyter notebook"
   },
   "germ_dna.1.fastq.gz": "input/sample/germ_dna.1.fastq.gz",
   "germ_dna.2.fastq.gz": "input/sample/germ_dna.2.fastq.gz",
@@ -27,6 +26,6 @@
   "dna_is_targeted": false,
   "soma_rna.1.fastq.gz": "input/sample/soma_rna.1.fastq.gz",
   "soma_rna.2.fastq.gz": "input/sample/soma_rna.2.fastq.gz",
-  "n_job": 1,
-  "gb_memory": 8
+  "n_job": 8,
+  "gb_memory": 32
 }

@@ -10,7 +10,7 @@ PATH="`pwd`/environment/manta-1.5.0.centos6_x86_64/bin:`pwd`/environment/strelka
 
 -   <https://www.nature.com/articles/s41587-019-0054-x>
 -   <http://lh3.github.io/2017/11/13/which-human-reference-genome-to-use>
--   ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.gz
+-   ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids
 -   ftp://ftp.ensembl.org/pub/release-95/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh38.cdna.all.fa.gz
 -   ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/
 -   <https://github.com/Illumina/manta>
@@ -26,6 +26,8 @@ PATH="`pwd`/environment/manta-1.5.0.centos6_x86_64/bin:`pwd`/environment/strelka
 -   <https://github.com/ICBI/viGEN/>
 -   <https://www.ncbi.nlm.nih.gov/genome/viruses/>
 -   <https://support.illumina.com/downloads/illumina-adapter-sequences-document-1000000002694.html>
+-   <https://github.com/genome-in-a-bottle/giab_latest_release>
+-   ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/release
 
 <br>
 
