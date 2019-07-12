@@ -34,3 +34,8 @@ PATH="`pwd`/environment/manta-1.5.0.centos6_x86_64/bin:`pwd`/environment/strelka
 Shareable Project powered by [Guardiome](https://guardiome.com)
 
 <img src="stuff/guardiome_logo.png" width="150" height="150">
+
+  "environment": [
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel conda-forge --yes jupyterlab julia",
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes skewer fastqc minimap2 htslib samtools bcftools snpeff kallisto"
+  ],

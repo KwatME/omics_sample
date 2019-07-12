@@ -1,23 +1,15 @@
 {
   "name": "",
-  "git_url": "",
+  "git_url": "https://github.com/Guardiome/sample_template",
   "version": "0.0.1",
   "keyword": [],
-  "environment": [
-    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel conda-forge --yes jupyterlab julia",
-    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel bioconda --yes skewer fastqc minimap2 htslib samtools bcftools snpeff kallisto"
-  ],
   "download": {
-    "environment": [
-      "https://github.com/Illumina/manta/releases/download/v1.5.0/manta-1.5.0.centos6_x86_64.tar.bz2",
-      "https://github.com/Illumina/strelka/releases/download/v2.9.10/strelka-2.9.10.centos6_x86_64.tar.bz2"
-    ],
     "input": [
       "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/data_for_processing_sequence.zip"
     ]
   },
   "command": {
-    "jupyter": "PATH=\"`pwd`/environment/manta-1.5.0.centos6_x86_64/bin:`pwd`/environment/strelka-2.9.10.centos6_x86_64/bin:$PATH\" && jupyter notebook"
+    "jupyter_notebook": "jupyter notebook"
   },
   "germ_dna.1.fastq.gz": "input/sample/germ_dna.1.fastq.gz",
   "germ_dna.2.fastq.gz": "input/sample/germ_dna.2.fastq.gz",
