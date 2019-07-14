@@ -1,6 +1,3 @@
-# Omics Sample
-
-Omics Sample :bust_in_silhouette: template :kimono:
 
 <br>
 
