@@ -9,7 +9,7 @@
     ]
   },
   "command": {
-    "jupyter_notebook": "jupyter notebook"
+    "notebook": "jupyter notebook"
   },
   "germ_dna.1.fastq.gz": "input/sample/germ_dna.1.fastq.gz",
   "germ_dna.2.fastq.gz": "input/sample/germ_dna.2.fastq.gz",
