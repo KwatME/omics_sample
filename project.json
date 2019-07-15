@@ -1,8 +1,14 @@
 {
-  "name": "",
-  "git_url": "",
+  "name": "Omics Sample",
+  "git_url": "https://github.com/Guardiome/omics_sample",
   "version": "0.0.1",
-  "keyword": [],
+  "keyword": [
+    "Omics Sample",
+    "Germ",
+    "Soma",
+    "Genome",
+    "Transcriptome"
+  ],
   "download": {
     "input": [
       "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/data_for_processing_sequence.zip"
@@ -10,7 +16,8 @@
   },
   "command": {
     "install_julia_packages": "julia code/install_julia_packages.jl",
-    "notebook": "jupyter notebook"
+    "check_sequence": "julia code/check_sequence.jl",
+    "process_sample": "julia code/process_sample.jl"
   },
   "germ_dna.1.fastq.gz": "input/sample/germ_dna.1.1k.fastq.gz",
   "germ_dna.2.fastq.gz": "input/sample/germ_dna.2.1k.fastq.gz",

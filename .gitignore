@@ -13,6 +13,9 @@ output/*
 
 !environment/*.yaml
 
+!environment/Project.toml
+!environment/Manifect.toml
+
 !stuff/guardiome_logo.png
 
 # ==============================================================================
