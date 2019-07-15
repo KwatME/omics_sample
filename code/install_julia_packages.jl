@@ -1,10 +1,3 @@
-using Pkg: add
+using Pkg
 
-for package_name = (
-    "IJulia",
-    "JSON",
-)
-
-    add(package_name)
-
-end
+pkg"add IJulia JSON"

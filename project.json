@@ -19,6 +19,6 @@
   "dna_is_targeted": false,
   "soma_rna.1.fastq.gz": "input/sample/soma_rna.1.fastq.gz",
   "soma_rna.2.fastq.gz": "input/sample/soma_rna.2.fastq.gz",
-  "n_job": 1,
-  "gb_memory": 8
+  "n_job": 8,
+  "gb_memory": 32
 }
