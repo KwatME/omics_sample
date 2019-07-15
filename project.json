@@ -9,6 +9,7 @@
     ]
   },
   "command": {
+    "install_julia_packages": "julia code/install_julia_packages.jl",
     "notebook": "jupyter notebook"
   },
   "germ_dna.1.fastq.gz": "input/sample/germ_dna.1.fastq.gz",
