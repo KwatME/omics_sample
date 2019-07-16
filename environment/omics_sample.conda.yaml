@@ -123,5 +123,5 @@ dependencies:
   - xz=5.2.4=h14c3975_4
   - zeromq=4.3.2=he1b5a44_2
   - zlib=1.2.11=h516909a_1005
-prefix: /home/kwat/github/omics_sample/environment/omics_sample
+prefix: null
 
