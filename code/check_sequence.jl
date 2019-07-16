@@ -1,9 +1,5 @@
 include("path.jl")
 
-using Pkg: activate
-
-activate(environment_directory_path)
-
 using JSON: parse
 
 project_json = parse(read(

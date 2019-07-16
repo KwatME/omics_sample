@@ -1,18 +1,13 @@
 include("path.jl")
 
-using Pkg: activate
-
-activate(environment_directory_path)
-
-using Kraft: print_and_run_cmd
-
 data_for_processing_sequence_directory_path = joinpath(
     input_directory_path,
     "data_for_processing_sequence",
 )
 
-if !isdir(data_for_processing_sequence_directory_path)
+using Kraft: print_and_run_cmd
 
+if !isdir(data_for_processing_sequence_directory_path)
 
     print_and_run_cmd(
         `unzip -o -d $input_directory_path $data_for_processing_sequence_directory_path.zip`
