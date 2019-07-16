@@ -15,7 +15,7 @@
     ]
   },
   "command": {
-    "install_julia_packages": "julia code/install_julia_packages.jl",
+    "make_julia_environment": "julia code/make_julia_environment.jl",
     "check_sequence": "julia code/check_sequence.jl",
     "process_sample": "julia code/process_sample.jl"
   },

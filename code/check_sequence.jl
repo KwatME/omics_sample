@@ -1,6 +1,8 @@
-using Kraft: check_sequence
+include("path.jl")
 
-include("initialize_path.jl")
+using Pkg: activate
+
+activate(environment_directory_path)
 
 using JSON: parse
 
@@ -8,6 +10,8 @@ project_json = parse(read(
     project_json_file_path,
     String,
 ))
+
+using Kraft: check_sequence
 
 check_sequence(
     Tuple(

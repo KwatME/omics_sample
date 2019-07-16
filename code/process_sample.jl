@@ -1,11 +1,10 @@
-using Kraft: (
-    print_and_run_cmd,
-    process_germ_dna,
-    process_soma_dna,
-    process_soma_rna,
-)
+include("path.jl")
 
-include("initialize_path.jl")
+using Pkg: activate
+
+activate(environment_directory_path)
+
+using Kraft: print_and_run_cmd
 
 data_for_processing_sequence_directory_path = joinpath(
     input_directory_path,
@@ -13,6 +12,7 @@ data_for_processing_sequence_directory_path = joinpath(
 )
 
 if !isdir(data_for_processing_sequence_directory_path)
+
 
     print_and_run_cmd(
         `unzip -o -d $input_directory_path $data_for_processing_sequence_directory_path.zip`
@@ -45,6 +45,8 @@ process_dna_arguments = (
     2,
 )
 
+using Kraft: process_germ_dna
+
 if all(in(
     key,
     keys(project_json),
@@ -52,7 +54,7 @@ if all(in(
     "germ_dna.1.fastq.gz",
     "germ_dna.2.fastq.gz",
 ))
-    
+
     process_germ_dna(
         joinpath(
             project_directory_path,
@@ -72,6 +74,7 @@ if all(in(
     
 end
 
+using Kraft: process_soma_dna
 
 if all(in(
     key,
@@ -109,6 +112,8 @@ if all(in(
     )
     
 end
+
+using Kraft: process_soma_rna
 
 if all(in(
     key,
