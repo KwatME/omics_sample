@@ -20,8 +20,8 @@ uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.21.0"
 
 [[Kraft]]
-deps = ["JSON"]
-git-tree-sha1 = "0a127afbb93de8a58e0385158eb3f8aa15744319"
+deps = ["Dates", "JSON"]
+git-tree-sha1 = "914725cf52edf74642fb8eb6a371de8d77eefabb"
 repo-rev = "master"
 repo-url = "https://github.com/KwatME/Kraft.jl"
 uuid = "5c7faf16-a6b3-11e9-0c80-d5a0766e5f8b"
