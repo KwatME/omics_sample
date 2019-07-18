@@ -1,7 +1,6 @@
 name: null
 channels:
   - bioconda
-  - conda-forge
   - defaults
 dependencies:
   - _libgcc_mutex=0.1=main
@@ -18,10 +17,10 @@ dependencies:
   - python=2.7.16=h9bab390_0
   - readline=7.0=h7b6447c_5
   - setuptools=41.0.1=py27_0
-  - sqlite=3.28.0=h7b6447c_0
+  - sqlite=3.29.0=h7b6447c_0
   - strelka=2.9.10=0
   - tk=8.6.8=hbc83047_0
   - wheel=0.33.4=py27_0
   - zlib=1.2.11=h7b6447c_3
-prefix: null
+prefix: /home/kwat/github/omics_sample/environment/omics_sample_py2
 

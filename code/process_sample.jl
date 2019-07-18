@@ -40,7 +40,7 @@ process_dna_arguments = (
     2,
 )
 
-using Kraft: process_germ_dna
+using Kraft: error_if_same, process_germ_dna
 
 if all(in(
     key,
@@ -49,6 +49,11 @@ if all(in(
     "germ_dna.1.fastq.gz",
     "germ_dna.2.fastq.gz",
 ))
+
+    error_if_same(
+        project_json["germ_dna.1.fastq.gz"],
+        project_json["germ_dna.2.fastq.gz"],
+    )
 
     process_germ_dna(
         joinpath(
@@ -80,6 +85,16 @@ if all(in(
     "soma_dna.1.fastq.gz",
     "soma_dna.2.fastq.gz",
 ))
+
+    error_if_same(
+        project_json["germ_dna.1.fastq.gz"],
+        project_json["germ_dna.2.fastq.gz"],
+    )
+
+    error_if_same(
+        project_json["soma_dna.1.fastq.gz"],
+        project_json["soma_dna.2.fastq.gz"],
+    )
 
     process_soma_dna(
         joinpath(
@@ -117,6 +132,11 @@ if all(in(
     "soma_rna.1.fastq.gz",
     "soma_rna.2.fastq.gz",
 ))
+
+    error_if_same(
+        project_json["soma_rna.1.fastq.gz"],
+        project_json["soma_rna.2.fastq.gz"],
+    )
     
     process_soma_rna(
         joinpath(
