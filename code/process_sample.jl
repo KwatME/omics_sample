@@ -1,3 +1,24 @@
+using Kraft: print_and_run_cmd
+
+for program in (
+    "skewer",
+    "fastqc",
+    "bgzip",
+    "tabix",
+    "minimap2",
+    "samtools",
+    "configManta.py",
+    "configureStrelkaGermlineWorkflow.py",
+    "configureStrelkaSomaticWorkflow.py",
+    "bcftools",
+    "snpEff",
+    "kallisto",
+)
+
+    print_and_run_cmd(`which $program`)
+
+end
+
 include("path.jl")
 
 data_for_processing_sequence_directory_path = joinpath(
@@ -5,13 +26,9 @@ data_for_processing_sequence_directory_path = joinpath(
     "data_for_processing_sequence",
 )
 
-using Kraft: print_and_run_cmd
-
 if !isdir(data_for_processing_sequence_directory_path)
 
-    print_and_run_cmd(
-        `unzip -o -d $input_directory_path $data_for_processing_sequence_directory_path.zip`
-    )
+    print_and_run_cmd(`unzip -o -d $input_directory_path $data_for_processing_sequence_directory_path.zip`)
 
 end
 
