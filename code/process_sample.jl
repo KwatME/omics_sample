@@ -1,25 +1,6 @@
-using Kraft: print_and_run_cmd
-
-for program in (
-    "skewer",
-    "fastqc",
-    "bgzip",
-    "tabix",
-    "minimap2",
-    "samtools",
-    "configManta.py",
-    "configureStrelkaGermlineWorkflow.py",
-    "configureStrelkaSomaticWorkflow.py",
-    "bcftools",
-    "snpEff",
-    "kallisto",
-)
-
-    print_and_run_cmd(`which $program`)
-
-end
-
 include("path.jl")
+
+using Kraft: print_and_run_cmd
 
 data_for_processing_sequence_directory_path = joinpath(
     input_directory_path,
@@ -43,6 +24,7 @@ process_dna_arguments = (
     joinpath(
         data_for_processing_sequence_directory_path,
         "GCA_000001405.15_GRCh38_no_alt_plus_hs38d1_analysis_set.fna.gz",
+        # "hs37d5.fa.gz",
     ),
     joinpath(
         data_for_processing_sequence_directory_path,
