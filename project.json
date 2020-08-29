@@ -1,18 +1,13 @@
 {
-  "download": {
-    "input": [
-      "https://s3-us-west-1.amazonaws.com/guardiome.omics-data/data_for_processing_sequence.zip"
-    ]
-  },
   "dna_is_targeted": false,
-  "germ_dna.1.fastq.gz": "/media/kwat/CarrotCake/garden/sample/738/WGC056190D_combined_R1.fastq.gz",
-  "germ_dna.2.fastq.gz": "/media/kwat/CarrotCake/garden/sample/738/WGC056190D_combined_R2.fastq.gz",
+  "germ_dna.1.fastq.gz": "/input/.gz",
+  "germ_dna.2.fastq.gz": "/input/.gz",
   "_germ_dna.1.fastq.gz": "input/sample/germ_dna.1.1k.fastq.gz",
   "_germ_dna.2.fastq.gz": "input/sample/germ_dna.2.1k.fastq.gz",
   "_soma_dna.1.fastq.gz": "input/sample/soma_dna.1.1k.fastq.gz",
   "_soma_dna.2.fastq.gz": "input/sample/soma_dna.2.1k.fastq.gz",
   "_soma_rna.1.fastq.gz": "input/sample/soma_rna.1.1k.fastq.gz",
   "_soma_rna.2.fastq.gz": "input/sample/soma_rna.2.1k.fastq.gz",
-  "n_job": 10,
+  "n_job": 8,
   "gb_memory": 48
 }
