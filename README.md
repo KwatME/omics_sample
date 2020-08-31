@@ -8,9 +8,9 @@ This package uses Skewer to trim reads, minimap2 to align them to GRCH38, and st
 
 ## Setup Environment
 
-### 1. [Install conda](https://github.com/KwatME/environment/blob/master/conda.md)
+1. [Install conda](https://github.com/KwatME/environment/blob/master/conda.md)
 
-### 2. [Install SnpEff](https://pcingola.github.io/SnpEff/download.html#download) in `Downloads/` folder. In Terminal enter:
+2. [Install SnpEff](https://pcingola.github.io/SnpEff/download.html#download) in `Downloads/` folder. In Terminal enter:
 
 ```sh
 cd ~/Downlaods/SnpEff_CURRENT_VERSION
@@ -35,16 +35,9 @@ end
 
 ```
 
-Add path to julia executable. On a mac add the following to ~/.bash_profile:
+4. Download [Kraft.jl](https://github.com/KwatME/Kraft.jl/releases/tag/0.0.1) and unzip.
 
-```sh
-alias julia="/Applications/Julia_CURRENT_VERSION/Contents/Resources/julia/bin/julia
-```
-
-### 4. Download [Kraft.jl](https://github.com/KwatME/Kraft.jl/releases/tag/0.0.1) and unzip.
-
-
-### 5. Install python 2.7 environment.
+5. Install python 2.7 environment.
 
 ```sh
 conda create --name py2 --yes python=2.7 &&
