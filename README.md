@@ -2,7 +2,8 @@ A self-contained genome sequence analysis package.
 
 `code/` contains sequence analysis notebooks which run in the environment below to read data (fastq, fasta) in `input/` and produce data (trimmed fastq, bam, vcf, etc.) in `output/`.
 
-This package uses Skewer to trim reads, minimap2 to align them to GRCH38, and strelka & manta to find variants.
+This package uses Skewer to trim reads, minimap2 to align them to GRCH38, and strelka & manta to find variants. It runs best on Linux.
+
 
 ## Setup Environment
 
