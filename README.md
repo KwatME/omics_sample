@@ -8,15 +8,7 @@ This package uses Skewer to trim reads, minimap2 to align them to GRCH38, and st
 
 1. [Install conda](https://github.com/KwatME/environment/blob/master/conda.md)
 
-2. [Install SnpEff](https://pcingola.github.io/SnpEff/download.html#download) in `Downloads/` folder
-
-```sh
-cd ~/Downlaods/SnpEff_CURRENT_VERSION
-
-java -jar SnpEff.jar download GRCh38.76
-```
-
-3. [Install Julia](https://julialang.org/downloads/)
+2. [Install Julia](https://julialang.org/downloads/)
 
 ```sh
 julia
@@ -33,8 +25,15 @@ end
 
 ```
 
-4. Download [Kraft.jl](https://github.com/KwatME/Kraft.jl/releases/tag/0.0.1) and unzip
+3. Download [Kraft.jl](https://github.com/KwatME/Kraft.jl/releases/tag/0.0.1) and unzip
 
+4. [Install SnpEff](https://pcingola.github.io/SnpEff/download.html#download) in `Downloads/` folder
+
+```sh
+cd ~/Downlaods/SnpEff_CURRENT_VERSION
+
+java -jar SnpEff.jar download GRCh38.76
+```
 
 ## Run
 
