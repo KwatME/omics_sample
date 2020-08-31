@@ -10,11 +10,9 @@ This package uses Skewer to trim reads, minimap2 to align them to GRCH38, and st
 
 ### 1. [Install conda](https://github.com/KwatME/environment/blob/master/conda.md)
 
-
-
 ### 2. [Install SnpEff](https://pcingola.github.io/SnpEff/download.html#download) in `Downloads/` folder. In Terminal enter:
 
-```
+```sh
 cd ~/Downlaods/SnpEff_CURRENT_VERSION
 
 java -jar SnpEff.jar download GRCh38.76
@@ -22,7 +20,7 @@ java -jar SnpEff.jar download GRCh38.76
 
 ### 3. [Install Julia](https://julialang.org/downloads/). Enter:
 
-```
+```sh
 julia
 
 for package in (
@@ -39,7 +37,7 @@ end
 
 Add path to julia executable. On a mac add the following to ~/.bash_profile:
 
-```
+```sh
 alias julia="/Applications/Julia_CURRENT_VERSION/Contents/Resources/julia/bin/julia
 ```
 
@@ -48,7 +46,7 @@ alias julia="/Applications/Julia_CURRENT_VERSION/Contents/Resources/julia/bin/ju
 
 ### 5. Install python 2.7 environment.
 
-```
+```sh
 conda create --name py2 --yes python=2.7 &&
 
 conda install --name py2 --channel bioconda --yes manta strelka
@@ -56,6 +54,6 @@ conda install --name py2 --channel bioconda --yes manta strelka
 
 ## Run
 
-```
+```sh
 jupyter lab
 ```
