@@ -4,8 +4,6 @@
   "germ_dna.2.fastq.gz": "input/sample/germ_dna.2.1k.fastq.gz",
   "soma_dna.1.fastq.gz": "input/sample/soma_dna.1.1k.fastq.gz",
   "soma_dna.2.fastq.gz": "input/sample/soma_dna.2.1k.fastq.gz",
-  "soma_rna.1.fastq.gz": "input/sample/soma_rna.1.1k.fastq.gz",
-  "soma_rna.2.fastq.gz": "input/sample/soma_rna.2.1k.fastq.gz",
   "n_job": 8,
   "gb_memory": 48
 }

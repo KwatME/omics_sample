@@ -25,9 +25,9 @@ end
 
 ```
 
-3. Download [Kraft.jl](https://github.com/KwatME/Kraft.jl/releases/tag/0.0.1) and unzip
+3.Download [Kraft.jl](https://github.com/KwatME/Kraft.jl/releases/tag/0.0.1) and unzip
 
-4. [Install SnpEff](https://pcingola.github.io/SnpEff/download.html#download) in `Downloads/` folder
+4.[Install SnpEff](https://pcingola.github.io/SnpEff/download.html#download) in `Downloads/` folder
 
 ```sh
 cd ~/Downlaods/SnpEff_CURRENT_VERSION
